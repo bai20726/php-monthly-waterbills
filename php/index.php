@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Monthly Water Bills</title>
 </head>
 <body>
+
+<!--The php code starts here for logic of the 
     <?php
     $amount = '';
 	$water_usage = '';
@@ -19,6 +22,7 @@
 	}
 	// Water bills per units
     //Conditional statement is the if else
+    //php functon
 	function water_bills($units) {
 		$first_unit_cost = 35;
 		$second_unit_cost = 40;
@@ -48,16 +52,14 @@
 	?>
 
     <!--form section to display the water bills -->
-    
+
 	<div class="section">
+        <div class ="card">
 		<h1>Your Water Bills This month</h1>
 		<div class="form-section">
 		<form action="" method="post">
-		<div class="form-section">
-			<input type="number" name="water" placeholder="Please enter no. of Units" class="form-control" />
-		</div>
-		<div class="form-section">		
-			<input type="submit" name="submit" class="btn btn-primary" value="Submit" />
+			<input type="number" name="water" placeholder="Please enter number of Water Units" class="form-control" />
+			<input type="submit" name="submit" class="btn-btn-primary" value="Submit" />
 		</div>	
 		</form>
 		</div>
@@ -65,6 +67,7 @@
 		    <?php echo '<br/>' . $amount; ?>
 		</div>
 	</div>
+</div>
    
 </body>
 </html>
