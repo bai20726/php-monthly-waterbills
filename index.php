@@ -17,8 +17,8 @@
 			$amount = '<strong>Total amount of ' . $units . ' units -</strong> ' . $water_usage;
 		}
 	}
-	/*** Water bills per units*/
-    /*** Conditional statement is the if else*/
+	// Water bills per units
+    //Conditional statement is the if else
 	function water_bills($units) {
 		$first_unit_cost = 35;
 		$second_unit_cost = 40;
@@ -46,6 +46,9 @@
 		return number_format((float)$bill, 2, '.', '');
 	}
 	?>
+
+    <!--form section to display the water bills -->
+    
 	<div class="section">
 		<h1>Your Water Bills This month</h1>
 		<div class="form-section">
